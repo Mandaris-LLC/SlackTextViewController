@@ -506,7 +506,7 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
 {
     NSString *contentSizeCategory = [[UIApplication sharedApplication] preferredContentSizeCategory];
     
-    [self setFontName:font.fontName pointSize:font.pointSize withContentSizeCategory:contentSizeCategory];
+    [self setFontName:font.familyName pointSize:font.pointSize withContentSizeCategory:contentSizeCategory];
     
     self.initialFontSize = font.pointSize;
 }
